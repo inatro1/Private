@@ -3,7 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const mysql = require("mysql2/promise");
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcrypt');
+bcrypt.hash('admin123, 10).then(h => console.log(h));
 const jwt = require("jsonwebtoken");
 
 const app = express();
